@@ -1,0 +1,113 @@
+.container {
+    display: block;
+    padding: 70px;
+    background-color: #520091;
+    color: #C0E0CC;
+    margin-top: -100px;
+}
+
+.title {
+    font-family: Beastly;
+    font-size: 240px;
+    font-weight: 400;
+    line-height: 240px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.subtitle {
+    font-family: Beastly;
+    font-size: 70px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.gridBtn {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px;
+    row-gap: 20px;
+}
+
+.link {
+    font-family: TT Hoves;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: 1px solid #C0E0CC;
+    border-radius: 5px;
+    line-height: 60px;
+    text-transform: uppercase;
+}
+
+.link:hover {
+    color: #520091;
+    background-color: #C0E0CC;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.text {
+    font-family: TT Hoves;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.textTitle {
+    font-family: TT Hoves;
+    font-size: 25px;
+    font-weight: 900;
+    line-height: 30px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: block;
+}
+
+.localTitle {
+    display: inline-block;
+    font-family: Beastly;
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #520091;
+    background-color: #C0E0CC;
+    line-height: 60px;
+    padding: 0 7px;
+    margin-bottom: 50px;
+}
+
+.select {
+    display: block;
+    background-color: #C0E0CC;
+    color: #520091;
+    font-family: TT Hoves;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-align: center;
+    width: 100%;
+    padding: 0 7px;
+    border: 1px solid #520091;
+    line-height: 45px;
+    border-radius: 5px;
+    height: 45px;
+    
+}
+.flex {
+    display: flex;
+    gap: 20px;
+}

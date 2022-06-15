@@ -1,0 +1,21 @@
+.product_hero_img {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+.product_hero_content {
+    background-color: #225439;
+    min-height: 40vh;
+}
+.product_hero_title {
+    font-family: 'Beastly';
+    font-size: 58px;
+    font-weight: 400;
+    line-height: 70px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EADACA;
+}

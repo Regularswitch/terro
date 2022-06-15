@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Beastly';
+    src:  url('../font/Beastly-18Point.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'TTHoves-Regular';
+    src:  url('../font/TTHoves-Regular.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'TTHoves-Bold';
+    src:  url('../font/TTHoves-Bold.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'TTHoves-Light';
+    src:  url('../font/TTHoves-Light.woff2') format('woff2');
+}

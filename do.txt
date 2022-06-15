@@ -1,0 +1,13 @@
+[x] onde compra - padding btn
+[x] sobra menu mobilhe hambúrguer
+[x] contato - centralizar versão mobile desktop
+[x] single - produto - botão variação ajustar
+[x] single - imagem abaixo descrição aumentar desktop
+[x] single - mobile onde comprar fixo
+[x] single - onde comprar simple quebrado
+[x] categoria - mobile banner padding inferior
+[x] categoria - altura largura botão
+[x] categoria - imagem forçar tamanho padrão
+[x] banner - texto sobre sole versão desktop e mobile
+[x] menu - categoria decentralizado
+[] au atualiza pagina vendo rodapé o fundo menu fica transparente

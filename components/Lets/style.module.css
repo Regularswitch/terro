@@ -1,0 +1,53 @@
+.container {
+    display: grid;
+    min-height: 100vh;
+    background-image: url('../../public/images/bg-lets.png');
+    background-size: cover;
+    grid-template-areas: 
+    "c c c c"
+    ". a e ."
+    ". f . ."
+    ". b b ."
+    "d d d d";
+    grid-template-columns: 70px 1fr 1fr 70px;
+    grid-template-rows: 1fr 300px 50px 300px 1fr;
+}
+.title_1,
+.title_2 {
+    font-family: Beastly;
+    font-size: 240px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EDDFD0;
+    margin-top: -100px;
+}
+.title_1 { grid-area: a; }
+.title_2 { grid-area: b; }
+.graph_1,
+.graph_2 {
+    width: 100%;
+    display: block;
+    margin: -5px 0;
+    
+}
+.graph_1 { grid-area: c; }
+.graph_2 { grid-area: d; }
+
+.subtitle {
+    font-family: 'TTHoves-Regular';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EDDFD0;
+    grid-area: f;
+    margin-top: -75px;
+}
+
+.logo {
+    text-align: right;
+    display: block;
+    grid-area: e;
+}

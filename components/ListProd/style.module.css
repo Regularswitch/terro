@@ -1,0 +1,73 @@
+.container {
+    display: grid;
+    padding: 0 70px;
+    background: #EDDFD0;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.item {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.img {
+    display: block;
+    height: 255px;
+}
+
+.name {
+    font-family: Beastly;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 65px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #225439;
+    display: block;
+}
+
+.btn {
+    display: flex;
+    margin: 0 auto;
+    font-family: TT Hoves;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #225439;
+    border: 1px solid #225439;
+    border-radius: 4px;
+    width: 270px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 17px;
+    margin-bottom: 17px;
+    font-weight: bolder;
+
+}
+
+.btn:hover {
+    background-color: #225439;
+    color: #E5E5E5;
+}
+
+.linkPrev {
+    display: block;
+    font-family: Beastly;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-align: right;
+    width: 100%;
+    padding: 20px 70px;
+    background: #EDDFD0;
+    cursor: pointer;
+    color: #225439;
+    box-sizing: border-box;
+
+}

@@ -1,0 +1,61 @@
+.heroBanner {
+    display: grid;
+    grid-template-areas: "a a . ." "b c . ." "d d . ." ;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 350px 20px 350px;
+    background-image: url('../../public/images/bg-hero-banner.png');
+    background-size: cover;
+    min-height: 100vh;
+    width: 100vw;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: -1;
+    padding-left: 70px;
+}
+
+.space {
+    display: block;
+    height: 100vh;
+    pointer-events: none;
+}
+
+.subtitle1,
+.subtitle2 {
+    font-family: 'TTHoves-Regular';
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EADACA;
+}
+
+.heroBannerTitle2,
+.heroBannerTitle1 {
+    font-family: 'Beastly';
+    font-size: 300px;
+    font-weight: 400;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EADACA;
+    display: block;
+    margin: 0;
+    padding: 0;
+}
+
+.heroBannerTitle1 {
+    grid-area: a;
+}
+
+.subtitle1 {
+    grid-area: b;
+}
+
+.subtitle2 {
+    grid-area: c;
+}
+
+.heroBannerTitle2 {
+    grid-area: d;
+    margin-top: -60px;
+}

@@ -1,0 +1,26 @@
+.title {
+    font-family: 'Beastly';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 160px;
+    line-height: 170px;
+    color: #EADACA;
+    margin-left: 70px;
+}
+.container {
+    display: block;
+    min-height: 100vh;
+    background-size: cover;
+    padding-top: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+}
+.space {
+    display: block;
+    width: 100%;
+    pointer-events: none;
+    height: 70vh;
+}

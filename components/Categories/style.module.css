@@ -1,0 +1,73 @@
+.productHeroImg {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    margin-top: -5px;
+    margin-bottom: -5px;
+}
+
+.productHeroContent {
+    background-color: #225439;
+    min-height: 40vh;
+}
+
+.productHeroTitle {
+    display: block;
+    font-family: 'Beastly';
+    color: #EADACA;
+    padding-right: 70px;
+    font-size: 100px;
+    font-weight: 400;
+    line-height: 100px;
+    letter-spacing: 0em;
+    text-align: right;
+}
+
+.prodGrid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    width: 1200px;
+    margin: 0 auto;
+    margin-top: 40px;
+    position: relative;
+}
+
+.prod>img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.prod span {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+    font-family: 'TTHoves-Regular';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #EDDFD0;
+    margin-top: 7px;
+    align-items: center;
+
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 35%;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.prev {
+    left: -30px;
+}
+
+.next {
+    right: -30px;
+}

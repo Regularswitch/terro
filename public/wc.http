@@ -1,0 +1,43 @@
+@host=http://api-terro.regularswitch.com
+@jwt=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9hcGktdGVycm8ucmVndWxhcnN3aXRjaC5jb20iLCJpYXQiOjE2NTE3NzU5NTYsIm5iZiI6MTY1MTc3NTk1NiwiZXhwIjoxNjUyMzgwNzU2LCJkYXRhIjp7InVzZXIiOnsiaWQiOiIxIn19fQ.xWRJjFVqY9hkZTMEmNEGrxwxmOMohPYfNplnk0rLSDY
+
+###
+GET {{host}}/wp-json/wc/v3/products/categories
+Authorization: Bearer {{jwt}}
+
+###
+GET {{host}}/wp-json/wc/v3/products
+Authorization: Bearer {{jwt}}
+
+###
+GET {{host}}/wp-json/wc/v3/products/categories/?slug=cultivo-indoor
+Authorization: Bearer {{jwt}}
+
+###
+GET {{host}}/wp-json/wc/v3/products/?category=19
+Authorization: Bearer {{jwt}}
+
+###
+GET {{host}}/wp-json/wc/v3/products
+Authorization: Bearer {{jwt}}
+
+###
+GET {{host}}/wp-json/wc/v3/products/43
+Authorization: Bearer {{jwt}}
+
+###
+GET {{host}}/wp-json/wc/v3/products/?slug=super
+Authorization: Bearer {{jwt}}
+
+###
+POST {{host}}/wp-json/jwt-auth/v1/token/validate
+Authorization: Bearer {{jwt}}
+
+###
+POST {{host}}/wp-json/jwt-auth/v1/token
+Content-Type: application/json
+
+{
+    "username": "bruno",
+    "password": "mangaka123"
+} 

@@ -1,0 +1,28 @@
+.container {
+    background-color: #EDDFD0;
+    display: block;
+    padding: 0 75px;
+    padding-bottom: 70px;
+}
+
+.title {
+    font-family: Beastly;
+    font-size: 240px;
+    font-weight: 400;
+    line-height: 240px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #225439;
+    display: block;
+
+}
+
+.link {
+    font-family: 'TTHoves-Regular';
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #225439;
+}
