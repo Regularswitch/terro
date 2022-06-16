@@ -97,7 +97,7 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
             }}
         >
             <Link href={href}>
-                <a className="flex justify-between" >
+                <a className="flex justify-between" onClick={_=> { sub && toggleMenuSub()}} >
                     {text}
                     {sub && <span 
                     className="w-[22px] h-[22px] mt-[9px] transition-all"
@@ -131,7 +131,7 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
                 <Terror color={colorFont} />
             </div>
             <LinkMenuMobile key="home" color={colorFont} href="/" text="HOME" />
-            <LinkMenuMobile key="produtos" color={colorFont} href="#" text="Produtos" sub={listCategories} />
+            <LinkMenuMobile key="Categorias" color={colorFont} href="#" text="Categorias" sub={listCategories} />
             <LinkMenuMobile key="contato" color={colorFont} href="/contato" text="Contato" />
             <LinkMenuMobile key="onde-comprar" color={colorFont} href="/onde-comprar" text="Onde Comprar" />
         </motion.div>

@@ -40,7 +40,7 @@ export default function Footer({ corText, corBg }) {
             <span style={styleLink} className="w-8/12 mx-auto lg:mx-0 mt-7 lg:hidden"></span>
             <div>
                 <LinkFooter text="Home" link="/" />
-                <LinkFooter text="Produto" link="/categoria-produto/cultivo-indoor" />
+                <LinkFooter text="Categorias" link="/categoria-produto/acessorios" />
             </div>
             <div>
                 <LinkFooter text="Contato" link="/contato" />

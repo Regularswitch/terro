@@ -10,4 +10,8 @@
 [x] categoria - imagem forçar tamanho padrão
 [x] banner - texto sobre sole versão desktop e mobile
 [x] menu - categoria decentralizado
-[] au atualiza pagina vendo rodapé o fundo menu fica transparente
+[x] au atualiza pagina vendo rodapé o fundo menu fica transparente
+
+[x] menu hover arrumar espaçamento 
+[x] let alinha celo comprar au centro vertical
+[x] menu mobile categorias ao inves de produto ao cliclar nele tambem abrir
