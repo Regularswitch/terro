@@ -108,7 +108,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                 </div>
 
                 <div className="absolute top-0 left-0 z-0 hidden lg:block">
-                    <BgMenu color={`rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, ${backgroundTransparacy})`} />
+                    <BgMenu color={`rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 1)`} />
                 </div>
 
                 <div className="col-span-3 hidden w-full md:block md:w-auto z-10" id="mobile-menu">
