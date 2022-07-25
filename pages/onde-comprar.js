@@ -25,7 +25,50 @@ export default function OndeComprar({ allCats }) {
             text: "Grama Cultivo Eficiente",
             href: "https://www.gramacultivo.com.br/",
         },
+        {
+            text: "Garden Leds",
+            href: "https://www.gardenleds.com.br",
+        },
     ]
+
+    const address = [
+        {
+            name: "SÃO PAULO",
+            slug: "SP",
+            data: [
+                { name: "Campinas", logadouro: "", telefone: "", type: "subtitle", link: "" },
+                { name: "Green World", logadouro: "Av. Nossa Sra. de Fátima, 460 - Taquaral,<br /> Campinas - SP, 13076-000", telefone: "(19) 97108-0775", type: "address", link: "https://www.greenworldgrow.com.br" },
+                { name: "Jundiaí", logadouro: "", telefone: "", type: "subtitle", link: "" },
+                { name: "Breeze Grow Shop", logadouro: "R. Sen. Fonseca, 557 - Centro, <br /> Jundiaí - SP, 13201-017", telefone: "(11) 99663-0860", type: "", link: "https://www.breezegrowshop.com.br" },
+                { name: "São Bernardo do Campo", logadouro: "", telefone: "", type: "subtitle", link: "" },
+                { name: "D'Gusta Head Shop e Grow Shop", logadouro: "R. Brasílio Machado, 382 - Loja 05 - Centro, <br /> São Bernardo do Campo - SP, 09715-140", telefone: "(11) 94752-6851", type: "", link: "https://www.dgustaheadgrow.com.br " },
+                { name: "São Paulo", logadouro: "", telefone: "", type: "subtitle", link: "" },
+                { name: "Garden Center Paisagismo", logadouro: "R. Jaguaribe, 134 - Santa Cecília, <br /> São Paulo - SP, 01224-001", telefone: "(11) 3331-1170", type: "", link: "http://gardenpaisagismo.com.br/" },
+                { name: "Belli Roots", logadouro: "Em frente a Galeria do Rock - R. 24 de Maio,  57 - República,<br /> São Paulo - SP, 01041-001", telefone: "(11) 94120-6735", type: "", link: "https://www.belliroots.com.br" },
+                { name: "SmartsBrasil SP", logadouro: "R. Teodoro Sampaio, 1020 - Loja 07 - Centro Comercial Pinheiros, <br /> São Paulo - SP, 05406-050 ", telefone: "(11) 96081-0032", type: "", link: "https://www.smartsbrasil.com.br" },
+                { name: "Grow Pro", logadouro: "R. da Paz, 1104 - Chácara Santo Antônio (Zona Sul), <br /> São Paulo - SP, 04713-001", telefone: "(11) 2659-2220", type: "", link: "https://www.growpro.com.br" },
+                { name: "Garden Sacomã", logadouro: "R. Cipriano Barata, 3500 - Ipiranga, <br /> São Paulo - SP, 04205-002", telefone: "(11) 2063-7017", type: "", link: "https://www.gardensacoma.com.br" },
+                { name: "Amabile Flower Shop", logadouro: "R. José Antônio Coelho, 602 - Vila Mariana, <br /> São Paulo - SP, 04011-061", telefone: "", type: "", link: "https://amabileflores.shop" },
+            ]
+        },
+        {
+            name: "PARANÁ",
+            slug: "PR",
+            data: [
+                { name: "Curitiba", logadouro: "", telefone: "", type: "subtitle", link: "" },
+                { name: "SmartsBrasil PR", logadouro: "Al. Dr. Carlos de Carvalho, 655 - Loja 04 - Centro, <br /> Curitiba - PR, 80430-180", telefone: "(41) 99525-0078", type: "address", link: "" },
+            ]
+        },
+        {
+            name: "Rio de Janeiro",
+            slug: "RJ",
+            data: [
+                { name: "Niterói", logadouro: "", telefone: "", type: "subtitle", link: "" },
+                { name: "Cultlight", logadouro: "Loja online, Niteroí, RJ", telefone: "(21) 96593-9706", type: "address", link: "www.cultlight.com.br" },
+            ]
+        },
+    ]
+
 
     return (
         <>
@@ -51,62 +94,59 @@ export default function OndeComprar({ allCats }) {
                         >
                             <option value="SP" > São Paulo </option>
                             <option value="PR"> Paraná </option>
+                            <option value="RJ"> Rio de Janeiro </option>
                         </select>
                     </div>
                 </div>
-                {uf == "PR" &&
-                    <div>
-                        <span className="inline-block font-Beastly text-4xl text-Purple bg-Light-Green px-2 font-normal my-7 lg:my-14">
-                            curitiba
-                        </span>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 mb-20 lg:mb-24">
-                            <p className="mb-4">
-                                <strong className="block text-2xl text-Light-Green font-TTHoves font-black uppercase">
-                                    SmartsBrasil PR
-                                </strong>
-                                <span className="text-Light-Green font-TTHoves text-xl font-medium">
-                                    Al. Dr. Carlos de Carvalho, 655 <br />
-                                    Loja 04 - Curitiba-PR <br />
-                                    (041) 995250078 <br />
-                                </span>
-                            </p>
+                {address.map((ad, i) => <>
+
+                    {uf == ad.slug &&
+                        <div>
+                            <div className="">
+                                {ad.data.map((local, i) => <>
+                                    {local.type == "subtitle" && <div className='w-full'>
+                                        <div className='mb-4'>
+                                            <span className="inline-block font-Beastly text-4xl text-Purple bg-Light-Green px-2 font-normal my-7 lg:my-14">
+                                                {local.name}
+                                            </span>
+                                        </div>
+                                    </div>
+                                    }
+                                    {local.type !== "subtitle" && <div className='w-full lg:w-1/2 inline-block mb-4'>
+                                        <p className="mb-4">
+                                            <Link href={local.link} key={i}>
+                                                <a
+                                                    target="_blank"
+                                                    rel="noreferrer"
+                                                >
+                                                    <strong className="block text-2xl text-Light-Green font-TTHoves font-black uppercase">
+                                                        {local.name}
+                                                        
+                                                    </strong>
+                                                </a>
+                                            </Link>
+                                            <span className="text-Light-Green font-TTHoves text-xl font-medium">
+                                                {/* {local.logadouro} */}
+                                                <div
+                                                            className='font-TTHoves'
+                                                            dangerouslySetInnerHTML={{ __html: local.logadouro }}
+
+                                                        />
+                                                {local.telefone} <br />
+                                            </span>
+                                        </p>
+                                    </div>}
+
+                                </>)}
+                            </div>
+
                         </div>
-                    </div>
-                }
-                {uf == "SP" &&
-                    <div>
-                        <span className="inline-block font-Beastly text-4xl text-Purple bg-Light-Green px-2 font-normal my-7 lg:my-14">
-                            são paulo
-                        </span>
-                        <div className="grid grid-cols-1 lg:grid-cols-2 mb-20 lg:mb-24">
-                            <p className="mb-4">
-                                <strong className="block text-2xl text-Light-Green font-TTHoves font-black uppercase">Belli Roots</strong>
-                                <span className="text-Light-Green font-TTHoves text-xl font-medium">HeadShop GrowShop ReggaeShop <br />
-                                    Rua 24 de Maio, 57 (em frente a Galeria do Rock) <br />
-                                    República, São Paulo - SP, 01041-001 <br />
-                                    (11) 94120-6835 <br /></span>
-                            </p>
-                            <p className="mb-4">
-                                <strong className="block text-2xl text-Light-Green font-TTHoves font-black uppercase">Grama Cultivo Eficiente</strong>
-                                <span className="text-Light-Green font-TTHoves text-xl font-medium">Rua Cunha Gago, 824 <br />
-                                    Pinheiros, São Paulo - SP, 05421-001 <br />
-                                    (11) 3816-8257 <br /></span>
-                            </p>
-                            <p className="mb-4">
-                                <strong className="block text-2xl text-Light-Green font-TTHoves font-black uppercase">Diboa Tabacaria</strong>
-                                <span className="text-Light-Green font-TTHoves text-xl font-medium">Rua Fradique Coutinho, 155 <br />
-                                    Pinheiros, São Paulo - SP, 05416-010 <br />
-                                    (11) 3360-1930 <br /></span>
-                            </p>
-                            <p className="mb-4">
-                                <strong className="block text-2xl text-Light-Green font-TTHoves font-black uppercase">SmartsBrasil SP</strong>
-                                <span className="text-Light-Green font-TTHoves text-xl font-medium">Rua Teodoro Sampaio, 1020 - Loja 07 - Centro Comercial  <br />
-                                    Pinheiros, São Paulo - SP 05406050 <br />
-                                    (11) 96081-0032 <br /></span>
-                            </p>
-                        </div>
-                    </div>
-                }
+                    }
+                </>)}
+
+
+
+
                 <h2 className="font-Beastly text-Light-Green text-5xl lg:text-7xl mb-12">lojas online</h2>
                 <div className="grid grid-cols-1 lg:grid-cols-2 pb-12 gap-16">
                     {lojas.map(loja => <Link href={loja.href} key={loja.text}>
