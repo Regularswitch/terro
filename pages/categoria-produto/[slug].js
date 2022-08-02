@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react'
 import { MyMenu, BannerCat, Categories, Footer, ListProd} from "../../components/index"
 
 export default function Categoria({ newcat, allCats }) {
+    
     useEffect(() => {
-        document.title = newcat.name
+        // document.title = newcat.name
     }, []);
     const text = newcat.custom_fields.cor_fonte || '#225439'
     const bg = newcat.custom_fields.cor_tema||'#EDDFD0'
@@ -28,7 +29,7 @@ export async function getStaticPaths() {
 
     return {
         paths,
-        fallback: false
+        fallback: 'blocking'
     }
 }
 

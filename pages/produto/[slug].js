@@ -41,12 +41,14 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                 <div>{image && <div
                     className="relative h-[280px] lg:h-[480px]"
                 >
-                    <Image
-                        src={image}
-                        alt="produto"
-                        layout="fill"
-                        objectFit="contain"
-                    />
+                    {image &&
+                        <Image
+                            src={image}
+                            alt="produto"
+                            layout="fill"
+                            objectFit="contain"
+                        />
+                    }
                 </div>}
                     {listProdutos.variations.length == 1 && <div
                         className="grid grid-cols-3 lg:grid-cols-5 gap-4 w-full pr-[10px] lg:pr-[40px] mt-[40px]"
@@ -59,12 +61,15 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                                 borderColor: text
                             }}
                         >
-                            <Image
-                                src={urlPhoto}
-                                alt="produto"
-                                layout="fill"
-                                objectFit="contain"
-                            />
+                            {urlPhoto &&
+
+                                <Image
+                                    src={urlPhoto}
+                                    alt="produto"
+                                    layout="fill"
+                                    objectFit="contain"
+                                />
+                            }
 
                         </div>)}
                     </div>}
@@ -72,16 +77,19 @@ export default function ProdutoSingle({ listProdutos, categories }) {
 
                         {listProdutos.variations.map(produto =>
                             <div key={produto.id}>
-                                <Image
-                                    src={produto.image}
-                                    alt="produto"
-                                    width={1}
-                                    height={1}
-                                    style={{
-                                        display: "none !important"
-                                    }}
+                                {produto.image &&
 
-                                />
+                                    <Image
+                                        src={produto.image}
+                                        alt="produto"
+                                        width={1}
+                                        height={1}
+                                        style={{
+                                            display: "none !important"
+                                        }}
+
+                                    />
+                                }
 
                                 {listProdutos.variations.length > 1 &&
                                     <button
@@ -122,13 +130,16 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                         <div
                             className="relative lg: w-[330px]  my-5"
                         >
-                            <Image
-                                src={listProdutos.custom_fields.imagem_dos_status}
-                                alt="produto"
-                                layout="responsive"
-                                width={330}
-                                height={100}
-                            />
+                            {listProdutos.custom_fields.imagem_dos_status &&
+
+                                <Image
+                                    src={listProdutos.custom_fields.imagem_dos_status}
+                                    alt="produto"
+                                    layout="responsive"
+                                    width={330}
+                                    height={100}
+                                />
+                            }
                             <br />
                         </div>
                     }
@@ -162,7 +173,7 @@ export async function getStaticPaths() {
 
     return {
         paths,
-        fallback: false
+        fallback: 'blocking'
     }
 }
 
