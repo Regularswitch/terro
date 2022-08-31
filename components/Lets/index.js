@@ -3,7 +3,8 @@ import Contato from '../Icon/Contato'
 import ComprarAgora from '../Icon/ComprarAgora'
 export default function Lets() {
     return <>
-        <div className="bg-bg-lets bg-no-repeat bg-cover relative">
+        <div className="bg-bg-lets bg-no-repeat bg-cover relative pb-[50px] lg:pb-[100px]">
+            
             <ProdBottom color="#225439" />
             <div className="block lg:flex lg:pr-[70px]" style={{
                 alignItems: "center"
@@ -24,7 +25,7 @@ export default function Lets() {
                     <ComprarAgora color="#EDDFD0" size="180" className="w-[100px] lg:w-[180px]" />
                 </div>
             </div>
-            <Contato color="#EDDFD0" />
+            {/* <Contato color="#EDDFD0" /> */}
         </div>
     </>
 }

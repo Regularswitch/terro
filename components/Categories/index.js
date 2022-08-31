@@ -48,7 +48,7 @@ export default function Categories({ categories, colorTheme, colorFont }) {
 
     return <>
         <div
-            className='bg-Dark-Green px-0 lg:px-20'
+            className='bg-Dark-Green px-0 lg:px-20 pb-[50px] lg:pb-[100px]'
             style={{
                 backgroundColor: bg
             }}

@@ -17,14 +17,7 @@ export default function OndeComprar({ allCats }) {
             text: "Smart Shop Brasil",
             href: "https://www.smartsbrasil.com.br/",
         },
-        {
-            text: "Diboa Tabacaria",
-            href: "https://www.diboatabacaria.com.br/",
-        },
-        {
-            text: "Grama Cultivo Eficiente",
-            href: "https://www.gramacultivo.com.br/",
-        },
+
         {
             text: "Garden Leds",
             href: "https://www.gardenleds.com.br",
@@ -73,7 +66,7 @@ export default function OndeComprar({ allCats }) {
     return (
         <>
             <MyMenu categories={allCats} colorFont="#520091" colorTheme="#C0E0CC" />
-            <div className="pt-40 bg-Purple px-5 lg:px-20">
+            <div className="pt-40 bg-Purple px-5 lg:px-20 pb-[50px] lg:pb-[100px]">
                 <h1 className="font-Beastly text-Light-Green text-[60px] leading-[50px] lg:text-[240px] font-normal lg:leading-[220px] mb-5">
                     onde <br />
                     comprar

@@ -13,7 +13,7 @@ export default function Categoria({ newcat, allCats }) {
         <BannerCat img={newcat.image} name={newcat.name} colorTheme={bg} colorFont={text}  />
         <ListProd prods={newcat.products} colorTheme={bg} colorFont={text} />
         <Categories categories={allCats} colorTheme={bg} colorFont={text} />
-        <Footer corBg={bg} corText={text} />
+        <Footer corBg={text} corText={bg} />
     </>
 }
 

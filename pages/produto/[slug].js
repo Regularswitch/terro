@@ -24,13 +24,13 @@ export default function ProdutoSingle({ listProdutos, categories }) {
     return <>
         <MyMenu categories={categories} colorTheme={text} colorFont={bg} />
         <div
-            className="pt-[50px] px-[20px] lg:px-[70px] lg:pt-[20px] pb-[40px]"
+            className="pt-[50px] px-[20px] lg:px-[70px] lg:pt-[20px]  pb-[50px] lg:pb-[180px] "
             style={{
                 backgroundColor: bg
             }}
         >
             <h1
-                className="text-6xl lg:text-[200px] font-Beastly block pt-16 mb-7"
+                className="text-6xl lg:text-[200px] font-Beastly block pt-[100px] mb-7"
                 style={{
                     color: text
                 }}
@@ -112,7 +112,7 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                 </div>
                 <div>
                     <span
-                        className="text-4xl lg:text-6xl font-TTHoves font-normal uppercase  block mb-5"
+                        className="text-4xl lg:text-6xl font-TTHoves font-normal uppercase  block mb-5 pb-[50px] lg:pb-[100px]"
                         style={{
                             color: text
                         }}
@@ -157,7 +157,7 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                 </div>
             </div>
         </div>
-        <Footer corText={bg} corBg={text} />
+        <Footer corText={text} corBg={bg} />
         <div style={{
             background: bg
         }} className="block h-[50px] lg:h-0" ></div>

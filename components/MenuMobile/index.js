@@ -89,7 +89,7 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
 
     function LinkMenuMobile({ href, text, sub, color }) {
         return <div
-            className={'uppercase font-Beastly  text-3xl border-solid border-b-2 py-4'}
+            className={'uppercase font-Beastly  text-[18px] border-solid border-b-2 py-3'}
             key={Math.random()}
             style={{
                 color,
@@ -130,9 +130,9 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
             >
                 <Terror color={colorFont} />
             </div>
-            <LinkMenuMobile key="home" color={colorFont} href="/" text="HOME" />
-            <LinkMenuMobile key="Categorias" color={colorFont} href="#" text="Categorias" sub={listCategories} />
-            <LinkMenuMobile key="contato" color={colorFont} href="/contato" text="Contato" />
+            {/* <LinkMenuMobile key="home" color={colorFont} href="/" text="HOME" /> */}
+            {/* <LinkMenuMobile key="Categorias" color={colorFont} href="#" text="Categorias" sub={listCategories} /> */}
+            {listCategories.map( c => <LinkMenuMobile key={c.text} color={colorFont} href={c.href} text={c.text} /> )}
             <LinkMenuMobile key="onde-comprar" color={colorFont} href="/onde-comprar" text="Onde Comprar" />
         </motion.div>
         <motion.div

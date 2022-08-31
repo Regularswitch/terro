@@ -64,7 +64,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
     function LinkMenu({ href, text }) {
         return <Link href={href}>
             <a
-                className="font-TTHovesBold text-xl block py-2 pr-4 pl-3 text-Light-Orange md:p-0"
+                className=" capitalize font-TTHovesBold text-xl block py-2 pr-4 pl-3 text-Light-Orange md:p-0"
                 style={{
                     color: colorTheme
                 }}
@@ -86,6 +86,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
 
     const rgb = hexToRgb(colorFont || '#225439')
 
+    
     return <>
         <nav
             className="absolute lg:fixed top-0 left-0 right-0 grid grid-cols-1 w-full h-24 z-10"
@@ -95,7 +96,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                 boxShadow: `rgb(0 0 0 / ${boxShadow}) 0px 0px 20px 6px`,
             }}
         >
-            <div className="grid grid-cols-4 justify-items-center items-center">
+            <div className="grid grid-cols-4 justify-items-center items-center  ">
 
                 <div className="mx-auto z-10">
                     <motion.div
@@ -111,10 +112,12 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                     <BgMenu color={`rgba(${rgb.r}, ${rgb.g}, ${rgb.b}, 1)`} />
                 </div>
 
-                <div className="col-span-3 hidden w-full md:block md:w-auto z-10" id="mobile-menu">
-                    <div className="grid grid-cols-4 gap-4 items-center w-full">
-                        <LinkMenu href="/" text="Home" />
-                        <motion.div
+                <div className="col-span-3 hidden w-full lg:block md:w-auto z-10" id="mobile-menu">
+                    <div className="grid grid-cols-5 gap-[40px] pr-[70px] items-center w-full">
+                        {/* <LinkMenu href="/" text="Home" /> */}
+                        {categories.map( c=><LinkMenu key={c.slug} href={'/categoria-produto/'+c.slug} text={c.name} /> )}
+                        
+                        {/* <motion.div
                             onMouseOver={_ => toggleHover(true)}
                             onMouseOut={_ => toggleHover(false)}
                             animate={{ x: -25 }}
@@ -135,8 +138,8 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                             >
                                 <SubMenu categories={categories} bgColor={colorTheme} color={colorFont} />
                             </motion.div>
-                        </motion.div>
-                        <LinkMenu href="/contato" text="Contato" />
+                        </motion.div> */}
+                        {/* <LinkMenu href="/contato" text="Contato" /> */}
                         <LinkMenu href="/onde-comprar" text="Onde Comprar" />
                     </div>
                 </div>

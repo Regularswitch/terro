@@ -11,7 +11,7 @@ export default function HomePage({ allCats }) {
             <BannerHome />
             <Categories categories={allCats} />
             <Lets />
-            <Contato />
+            {/* <Contato /> */}
             <Footer />
         </>
     )
