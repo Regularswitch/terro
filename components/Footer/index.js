@@ -5,6 +5,7 @@ import IconWhatsApp from "../Icon/WhatsApp";
 import Terror from "../Icon/Terror";
 import Link from 'next/link'
 import Contato from '../Icon/Contato'
+import Image from 'next/image'
 
 export default function Footer({ corText, corBg }) {
     const cor = corText || "#EDDFD0"
@@ -32,13 +33,13 @@ export default function Footer({ corText, corBg }) {
             className="w-100 relative  grid grid-cols-1 lg:grid-cols-[1fr_150px] content-center py-10 lg:px-[70px] text-center lg:text-left"
             style={{
                 backgroundColor: cor,
-                color: bg ,
+                color: bg,
                 alignItems: "center"
             }}
         >
-            <div className="absolute top-[-45px] sm:top-[-105px] lg:top-[-150px] left-0 w-full h-[50px]">
-            
-                <Contato color={cor}  />
+            <div className="absolute top-[-45px] sm:top-[-105px] lg:top-[-150px]  2xl:top-[-60%] left-0 w-full h-[50px]">
+
+                <Contato color={cor} />
             </div>
             <div>
 
@@ -53,11 +54,11 @@ export default function Footer({ corText, corBg }) {
                 <div className="grid grid-cols-1 lg:grid-cols-3 mt-[40px] lg:w-[900px]">
 
                     <div>
-                        <span className="block text-[20px] font-TTHoves mb-[20px]">TERRO SOLO VIVO LTDA.</span> 
+                        <span className="block text-[20px] font-TTHoves mb-[20px]">TERRO SOLO VIVO LTDA.</span>
                         <span className="block text-[20px] font-TTHoves mb-[20px]">VENDAS@TERRO.AGR.BR</span>
                     </div>
                     <div>
-                        <span className="block text-[20px] font-TTHoves mb-[20px]">CNPJ 37.326.747/0001-44</span> 
+                        <span className="block text-[20px] font-TTHoves mb-[20px]">CNPJ 37.326.747/0001-44</span>
                         <span className="block text-[20px] font-TTHoves mb-[20px]">MAPA N˚ SP 005709-6</span>
                     </div>
                     <div
@@ -73,5 +74,18 @@ export default function Footer({ corText, corBg }) {
                 <IconComprarAgora size={150} color={bg} />
             </div>
         </div>
+        <a
+            className="fixed bottom-16 lg:bottom-8 right-8"
+            href="https://wa.me/5511949181006"
+            rel="noreferrer"
+            target="_blank">
+            <Image
+                className="w-full"
+                src="/ico/whatsapp.png"
+                alt="WhatsApp"
+                width={70}
+                height={70}
+            />
+        </a>
     </>
 }
