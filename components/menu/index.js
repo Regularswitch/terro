@@ -115,7 +115,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                 <div className="col-span-3 hidden w-full lg:block md:w-auto z-10" id="mobile-menu">
                     <div className="grid grid-cols-5 gap-[40px] pr-[70px] items-center w-full">
                         {/* <LinkMenu href="/" text="Home" /> */}
-                        {categories.map( c=><LinkMenu key={c.slug} href={'/categoria-produto/'+c.slug} text={c.name} /> )}
+                        {/* {categories.map( c=><LinkMenu key={c.slug} href={'/categoria-produto/'+c.slug} text={c.name} /> )} */}
                         
                         {/* <motion.div
                             onMouseOver={_ => toggleHover(true)}
@@ -140,7 +140,11 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                             </motion.div>
                         </motion.div> */}
                         {/* <LinkMenu href="/contato" text="Contato" /> */}
-                        <LinkMenu href="/onde-comprar" text="Onde Comprar" />
+                        <LinkMenu href="/categoria-produto/cultivo-indoor" text="Cultivo Indoor" />
+                        <LinkMenu href="/categoria-produto/jardinagem-urbana" text="Cultivo Urbano" />
+                        <LinkMenu href="/categoria-produto/biofertilizantes" text="Biofertilizantes" />
+                        <LinkMenu href="/categoria-produto/acessorios" text="Acessórios" />
+                        <LinkMenu href="/onde-comprar" text="Comprar Agora" />
                     </div>
                 </div>
             </div>
