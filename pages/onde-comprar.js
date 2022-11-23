@@ -67,9 +67,9 @@ export default function OndeComprar({ allCats }) {
         <>
             <MyMenu categories={allCats} colorFont="#520091" colorTheme="#C0E0CC" />
             <div className="pt-40 bg-Purple px-5 lg:px-20 pb-[50px] lg:pb-[100px]">
-                <h1 className="font-Beastly text-Light-Green text-[60px] leading-[50px] lg:text-[240px] font-normal lg:leading-[220px] mb-5">
-                    onde <br />
-                    comprar
+                <h1 className="font-Beastly text-Light-Green text-[60px] leading-[50px] lg:text-[150px] font-normal lg:leading-[150px] mb-5">
+                    comprar <br />
+                    agora
                 </h1>
                 <div className="grid grid-cols-1 lg:grid-cols-2 items-center mt-7">
                     <div>

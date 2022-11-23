@@ -132,8 +132,21 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
             </div>
             {/* <LinkMenuMobile key="home" color={colorFont} href="/" text="HOME" /> */}
             {/* <LinkMenuMobile key="Categorias" color={colorFont} href="#" text="Categorias" sub={listCategories} /> */}
-            {listCategories.map( c => <LinkMenuMobile key={c.text} color={colorFont} href={c.href} text={c.text} /> )}
-            <LinkMenuMobile key="onde-comprar" color={colorFont} href="/onde-comprar" text="Onde Comprar" />
+            {/* {listCategories.map( c => <LinkMenuMobile key={c.text} color={colorFont} href={c.href} text={c.text} /> )} */}
+
+
+
+            <LinkMenuMobile color={colorFont} href="/categoria-produto/cultivo-indoor" text="Cultivo Indoor" />
+            <LinkMenuMobile color={colorFont} href="/categoria-produto/jardinagem-urbana" text="Cultivo Urbano" />
+            <LinkMenuMobile color={colorFont} href="/categoria-produto/biofertilizantes" text="Biofertilizantes" />
+            <LinkMenuMobile color={colorFont} href="/categoria-produto/acessorios" text="Acessórios" />
+            <LinkMenuMobile color={colorFont} href="/onde-comprar" text="Comprar Agora" />
+
+
+
+
+
+            {/* <LinkMenuMobile key="onde-comprar" color={colorFont} href="/onde-comprar" text="Onde Comprar" /> */}
         </motion.div>
         <motion.div
             initial="hidden"
