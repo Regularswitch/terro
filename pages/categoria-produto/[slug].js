@@ -41,7 +41,11 @@ export async function getStaticProps(context) {
 
     let reqAllCats = await fetch(`${process.env.API_URL}/categories`);
     let allCats = await reqAllCats.json()
-
+    
+    const orderProd = (p1, p2) => (+p1.custom_fields.produtos_relacionados < +p2.custom_fields.produtos_relacionados) ? 1 : (+p1.price > +p2.custom_fields.produtos_relacionados) ? -1 : 0
+    
+    newcat.products = (newcat.products.sort(orderProd)).reverse()
+    
     return {
         props: {
             newcat,
