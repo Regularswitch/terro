@@ -49,7 +49,7 @@ export async function getStaticProps(context) {
     return {
         props: {
             newcat,
-            allCats
+            allCats: allCats.reverse()
         },
         revalidate: 10
     }

@@ -153,13 +153,13 @@ export async function getStaticProps(context) {
     let reqAllCats = await fetch(`${process.env.API_URL}/categories`)
     let allCats = await reqAllCats.json();
 
-    let requestAddress = await fetch(`https://terro.app.br/wp-json/wp/v2/endereco?per_page=100`)
+    let requestAddress = await fetch(`https://terro.app.br/wp-json/wp/v2/endereco?per_page=100&orderby=title`)
     let allAddress = await requestAddress.json();
 
     return {
         props: {
             allCats,
-            allAddress
+            allAddress: allAddress.reverse()
         },
         revalidate: 10
     }
