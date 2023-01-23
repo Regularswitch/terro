@@ -59,8 +59,9 @@ export default function ListProd({ prods, colorTheme, colorFont }) {
                                 color: colorFont
                             }}
                         >
-                            {p.name}
+                            {p.name} {false && p.custom_fields.produtos_relacionados}
                         </strong>
+                        
                         <span
                             className="mt-5 font-TTHoves uppercase font-medium text-sm lg:text-xl"
                             style={{
