@@ -12,6 +12,8 @@ export default function ListProd({ prods, colorTheme, colorFont }) {
     }
     const router = useRouter()
 
+    console.log(prods)
+
     return <>
         <div
             style={{
@@ -70,9 +72,9 @@ export default function ListProd({ prods, colorTheme, colorFont }) {
                         >
                             {p.custom_fields.subtitulo}
                         </span>
-                        <Link href={'/produto/' + p.slug}>
+                        <Link href={p.custom_fields?.link_comprar || '/produto/' + p.slug }>
                             <a
-                                className=" h-[45px] w-[270px] mx-auto mt-5 border-2 text-[color:var(--color)] hover:text-[color:var(--bg)] hover:bg-[color:var(--color)] rounded font-TTHovesBold text-xl py-2 mb-10 uppercase "
+                                className=" h-[45px] w-[270px] mx-auto mt-5 border-2 text-[color:var(--color)] hover:text-[color:var(--bg)] hover:bg-[color:var(--color)] rounded font-TTHovesBold text-xl py-2 mb-2 uppercase "
                                 style={{
                                     borderColor: colorFont,
                                     "--color": colorFont,
@@ -80,6 +82,17 @@ export default function ListProd({ prods, colorTheme, colorFont }) {
                                 }}
                             >
                                 Comprar Agora
+                            </a>
+                        </Link>
+                        <Link href={'/produto/' + p.slug}>
+                            <a
+                                className=" h-[30px] w-[270px] mx-auto underline text-[color:var(--color)] text-xl  uppercase "
+                                style={{
+                                    borderColor: colorFont,
+                                    "--color": colorFont,
+                                }}
+                            >
+                                ver
                             </a>
                         </Link>
                     </div>

@@ -143,7 +143,7 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                             <br />
                         </div>
                     }
-                    <Link href="/onde-comprar" passHref>
+                    <Link href={listProdutos.custom_fields?.link_comprar || "/onde-comprar"} passHref>
                         <a
                             className="fixed left-0 bottom-0 w-full lg:w-auto lg:relative font-TTHoves uppercase text-2xl block text-center lg:rounded py-4 mt-5 font-bold hover:brightness-125"
                             style={{
@@ -151,7 +151,7 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                                 color: bg,
                             }}
                         >
-                            ONDE COMPRAR
+                            COMPRAR
                         </a>
                     </Link>
                 </div>
