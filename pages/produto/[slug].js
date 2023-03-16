@@ -145,7 +145,7 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                     }
                     <Link href={listProdutos.custom_fields?.link_comprar || "/onde-comprar"} passHref>
                         <a
-                            className="fixed left-0 bottom-0 w-full lg:w-auto lg:relative font-TTHoves uppercase text-2xl block text-center lg:rounded py-4 mt-5 font-bold hover:brightness-125"
+                            className="xl:mb-[150px] fixed left-0 bottom-0 w-full lg:w-auto lg:relative font-TTHoves uppercase text-2xl block text-center lg:rounded py-4 mt-5 font-bold hover:brightness-125"
                             style={{
                                 backgroundColor: text,
                                 color: bg,
