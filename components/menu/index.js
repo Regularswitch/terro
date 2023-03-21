@@ -64,7 +64,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
     function LinkMenu({ href, text }) {
         return <Link href={href}>
             <a
-                className=" capitalize font-TTHovesBold text-xl block py-2 pr-4 pl-3 text-Light-Orange md:p-0"
+                className="capitalize font-TTHovesRegular text-xl block py-2 pr-4 pl-3 text-Light-Orange md:p-0"
                 style={{
                     color: colorTheme
                 }}
@@ -113,7 +113,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                 </div>
 
                 <div className="col-span-3 hidden w-full lg:block md:w-auto z-10" id="mobile-menu">
-                    <div className="grid grid-cols-5 gap-[40px] pr-[70px] items-center w-full">
+                    <div className="grid grid-cols-6 gap-[20px] pr-[70px] items-center w-full">
                         {/* <LinkMenu href="/" text="Home" /> */}
                         {/* {categories.map( c=><LinkMenu key={c.slug} href={'/categoria-produto/'+c.slug} text={c.name} /> )} */}
                         
@@ -144,7 +144,8 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                         <LinkMenu href="/categoria-produto/jardinagem-urbana" text="Cultivo Urbano" />
                         <LinkMenu href="/categoria-produto/biofertilizantes" text="Biofertilizantes" />
                         <LinkMenu href="/categoria-produto/acessorios" text="Acessórios" />
-                        <LinkMenu href="/onde-comprar" text="Comprar Agora" />
+                        <LinkMenu href="https://www.lojaterro.com.br" text="Comprar" />
+                        <LinkMenu href="/onde-comprar" text="Lojas" />
                     </div>
                 </div>
             </div>
