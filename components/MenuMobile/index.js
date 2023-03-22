@@ -89,7 +89,7 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
 
     function LinkMenuMobile({ href, text, sub, color }) {
         return <div
-            className={'uppercase font-Beastly  text-[18px] border-solid border-b-2 py-3'}
+            className={'uppercase font-TTHovesRegular  text-[18px] border-solid border-b-[1px] py-3'}
             key={Math.random()}
             style={{
                 color,
@@ -123,7 +123,7 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
             className={`fixed top-0 left-0  p-7 w-full h-full z-20 ${!isOpen && 'hidden'}`}
         >
             <div
-                className={'border-solid border-b-2 py-4 '}
+                className={'border-solid border-b-[1px] py-4 '}
                 style={{
                     borderColor: colorFont
                 }}
@@ -140,7 +140,8 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
             <LinkMenuMobile color={colorFont} href="/categoria-produto/jardinagem-urbana" text="Cultivo Urbano" />
             <LinkMenuMobile color={colorFont} href="/categoria-produto/biofertilizantes" text="Biofertilizantes" />
             <LinkMenuMobile color={colorFont} href="/categoria-produto/acessorios" text="Acessórios" />
-            <LinkMenuMobile color={colorFont} href="/onde-comprar" text="Comprar Agora" />
+            <LinkMenuMobile color={colorFont} href="https://www.lojaterro.com.br" text="Comprar" />
+            <LinkMenuMobile color={colorFont} href="/onde-comprar" text="Lojas" />
 
 
 

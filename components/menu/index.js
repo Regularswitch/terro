@@ -113,7 +113,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                 </div>
 
                 <div className="col-span-3 hidden w-full lg:block md:w-auto z-10" id="mobile-menu">
-                    <div className="grid grid-cols-6 gap-[20px] pr-[70px] items-center w-full">
+                    <div className="flex grid-cols-6 gap-[40px]  items-center w-full ">
                         {/* <LinkMenu href="/" text="Home" /> */}
                         {/* {categories.map( c=><LinkMenu key={c.slug} href={'/categoria-produto/'+c.slug} text={c.name} /> )} */}
                         
