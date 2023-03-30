@@ -55,14 +55,15 @@ export default function ListProd({ prods, colorTheme, colorFont }) {
                                 </a>
                             </Link>
                         </div>
-                        <strong
+                        
+                        {/* <strong
                             className="font-Beastly font-normal text-xl lg:text-6xl"
                             style={{
                                 color: colorFont
                             }}
                         >
                             {p.name} {false && p.custom_fields.produtos_relacionados}
-                        </strong>
+                        </strong> */}
                         
                         <span
                             className="mt-5 font-TTHoves uppercase font-medium text-sm lg:text-xl"
@@ -84,7 +85,7 @@ export default function ListProd({ prods, colorTheme, colorFont }) {
                                 Comprar Agora
                             </a>
                         </Link>
-                        <Link href={'/produto/' + p.slug}>
+                        {/* <Link href={'/produto/' + p.slug}>
                             <a
                                 className=" h-[30px] w-[270px] mx-auto underline text-[color:var(--color)] text-xl  uppercase "
                                 style={{
@@ -94,7 +95,7 @@ export default function ListProd({ prods, colorTheme, colorFont }) {
                             >
                                 ver
                             </a>
-                        </Link>
+                        </Link> */}
                     </div>
                 )}
             </div>
