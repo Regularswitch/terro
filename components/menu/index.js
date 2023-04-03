@@ -141,8 +141,8 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                         </motion.div> */}
                         {/* <LinkMenu href="/contato" text="Contato" /> */}
                         <LinkMenu href="/categoria-produto/cultivo-indoor" text="Cultivo Indoor" />
-                        <LinkMenu href="/categoria-produto/jardinagem-urbana" text="Cultivo Urbano" />
-                        <LinkMenu href="/categoria-produto/biofertilizantes" text="Biofertilizantes" />
+                        <LinkMenu href="/categoria-produto/kits-prontos" text="Kits Prontos" />
+                        <LinkMenu href="/categoria-produto/biofertilizantes" text="Adubos" />
                         <LinkMenu href="/categoria-produto/acessorios" text="Acessórios" />
                         <LinkMenu href="https://www.lojaterro.com.br" btn={true} text="Comprar" />
                         <LinkMenu href="/onde-comprar" btn={true}  text="Lojas" />

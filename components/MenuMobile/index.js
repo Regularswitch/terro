@@ -137,8 +137,8 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
 
 
             <LinkMenuMobile color={colorFont} href="/categoria-produto/cultivo-indoor" text="Cultivo Indoor" />
-            <LinkMenuMobile color={colorFont} href="/categoria-produto/jardinagem-urbana" text="Cultivo Urbano" />
-            <LinkMenuMobile color={colorFont} href="/categoria-produto/biofertilizantes" text="Biofertilizantes" />
+            <LinkMenuMobile color={colorFont} href="/categoria-produto/kits-prontos" text="Kits Prontos" />
+            <LinkMenuMobile color={colorFont} href="/categoria-produto/biofertilizantes" text="Adubos" />
             <LinkMenuMobile color={colorFont} href="/categoria-produto/acessorios" text="Acessórios" />
             <LinkMenuMobile color={colorFont} href="https://www.lojaterro.com.br" text="Comprar" />
             <LinkMenuMobile color={colorFont} href="/onde-comprar" text="Lojas" />
