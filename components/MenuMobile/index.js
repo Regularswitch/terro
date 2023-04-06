@@ -87,9 +87,10 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
         </div>
     }
 
-    function LinkMenuMobile({ href, text, sub, color }) {
+    function LinkMenuMobile({ href, text, sub, color, btn }) {
+        let classBtn = !btn ? '' : '!border-[1px] border-[#FFF] !px-4 !py-2 !rounded '
         return <div
-            className={'uppercase font-TTHovesRegular  text-[18px] border-solid border-b-[1px] py-3'}
+            className={'uppercase font-TTHovesRegular  text-[18px] border-solid border-b-[1px] py-3' }
             key={Math.random()}
             style={{
                 color,
@@ -97,8 +98,8 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
             }}
         >
             <Link href={href}>
-                <a className="flex justify-between" onClick={_=> { sub && toggleMenuSub()}} >
-                    {text}
+                <a style={{borderColor: color}} className={"flex justify-between " + classBtn} onClick={_=> { sub && toggleMenuSub()}} >
+                    {text} 
                     {sub && <span 
                     className="w-[22px] h-[22px] mt-[9px] transition-all"
                     onClick={toggleMenuSub}
@@ -140,8 +141,8 @@ export default function MenuMobile({ colorTheme, colorFont, categories }) {
             <LinkMenuMobile color={colorFont} href="/categoria-produto/kits-prontos" text="Kits Prontos" />
             <LinkMenuMobile color={colorFont} href="/categoria-produto/biofertilizantes" text="Adubos" />
             <LinkMenuMobile color={colorFont} href="/categoria-produto/acessorios" text="Acessórios" />
-            <LinkMenuMobile color={colorFont} href="https://www.lojaterro.com.br" text="Comprar" />
-            <LinkMenuMobile color={colorFont} href="/onde-comprar" text="Lojas" />
+            <LinkMenuMobile btn={true}  color={colorFont} href="https://www.lojaterro.com.br" text="Comprar" />
+            <LinkMenuMobile btn={true}  color={colorFont} href="/onde-comprar" text="Lojas" />
 
 
 

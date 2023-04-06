@@ -67,7 +67,8 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
             <a
                 className={"capitalize font-TTHovesRegular text-xl block py-2 pr-4 pl-3 text-Light-Orange md:p-0 " + classBtn }
                 style={{
-                    color: colorTheme
+                    color: colorTheme,
+                    borderColor: colorTheme
                 }}
             >
                 {text}

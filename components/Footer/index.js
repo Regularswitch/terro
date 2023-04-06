@@ -30,14 +30,14 @@ export default function Footer({ corText, corBg }) {
 
     return <>
         <div
-            className="w-100 relative  grid grid-cols-1 lg:grid-cols-[1fr_150px] content-center py-10 lg:px-[70px] text-center lg:text-left"
+            className="w-100 relative  grid grid-cols-1 lg:grid-cols-[1fr_150px] content-center py-10 lg:px-[70px] text-center lg:text-left 2xl:mt-[250px]"
             style={{
                 backgroundColor: cor,
                 color: bg,
                 alignItems: "center"
             }}
         >
-            <div className="absolute top-[-45px] sm:top-[-105px] lg:top-[-150px]  2xl:top-[-60%] left-0 w-full h-[50px]">
+            <div className="absolute top-[-45px] sm:top-[-105px] lg:top-[-150px]  2xl:top-[-90%] left-0 w-full h-[50px] ">
 
                 <Contato color={cor} />
             </div>
