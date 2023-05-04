@@ -37,6 +37,7 @@ export default function ProdutoSingle({ listProdutos, categories }) {
             >
                 {listProdutos.name}
             </h1>
+            
             <div className="grid grid-cols-1 lg:grid-cols-2">
                 <div>{image && <div
                     className="relative h-[280px] lg:h-[480px]"
@@ -112,11 +113,12 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                 </div>
                 <div>
                     <span
-                        className="text-4xl lg:text-6xl font-TTHoves font-normal uppercase  block mb-5 pb-[50px] lg:pb-[100px]"
+                        className="text-4xl lg:text-6xl font-TTHoves font-normal uppercase  block mb-5 pb-[0px] lg:pb-[0px]"
                         style={{
                             color: text
                         }}
                     >
+                        
                         {listProdutos.custom_fields.subtitulo}
                     </span>
                     <div
@@ -144,7 +146,7 @@ export default function ProdutoSingle({ listProdutos, categories }) {
                         </div>
                     }
                     <Link href={listProdutos.custom_fields?.link_comprar || "/onde-comprar"} passHref>
-                        <a
+                        <a target={ listProdutos.custom_fields?.link_comprar ? '_blank' : '' }
                             className="xl:mb-[150px] fixed left-0 bottom-0 w-full lg:w-auto lg:relative font-TTHoves uppercase text-2xl block text-center lg:rounded py-4 mt-5 font-bold hover:brightness-125"
                             style={{
                                 backgroundColor: text,
