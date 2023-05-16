@@ -53,7 +53,7 @@ export default function OndeComprar({ allCats, allAddress }) {
     return (
         <>
             <MyMenu categories={allCats} colorFont="#520091" colorTheme="#C0E0CC" />
-            <div className="pt-40 bg-Purple px-5 lg:px-20 pb-[50px] lg:pb-[100px]">
+            <div className="pt-40 bg-Purple px-5 lg:px-20 pb-[50px] lg:pb-[100px] xl:pb-[200px]">
                 <h1 className="font-Beastly text-Light-Green text-[60px] leading-[50px] lg:text-[150px] font-normal lg:leading-[150px] mb-5">
                     comprar <br />
                     agora

@@ -30,7 +30,7 @@ export default function Footer({ corText, corBg }) {
 
     return <>
         <div
-            className="mt-[-100px] lg:mt-[-150px] mb-[-2px] relative z-[1] xl:mt-[-270px]"
+            className="mt-[-100px] lg:mt-[-150px] mb-[-2px] relative z-[1] xl:mt-[-270px] pointer-events-none"
         >
             <Contato color={cor} />
         </div>
