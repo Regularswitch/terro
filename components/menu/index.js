@@ -61,10 +61,12 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
             }
         },
     };
-    function LinkMenu({ href, text, btn }) {
+    function LinkMenu({ href, text, btn, n }) {
         let classBtn = !btn ? '' : 'border-[1px] border-[#FFF] !px-4 !py-2 rounded'
+        console.log(n)
         return <Link href={href}>
             <a
+                target={ n === true ? '_blank' : '' }
                 className={"capitalize font-TTHovesRegular text-xl block py-2 pr-4 pl-3 text-Light-Orange md:p-0 " + classBtn }
                 style={{
                     color: colorTheme,
@@ -145,7 +147,7 @@ export default function MyMenu({ categories, colorTheme, colorFont }) {
                         <LinkMenu href="/categoria-produto/kits-prontos" text="Kits Prontos" />
                         <LinkMenu href="/categoria-produto/biofertilizantes" text="Adubos" />
                         <LinkMenu href="/categoria-produto/acessorios" text="Acessórios" />
-                        <LinkMenu href="https://www.lojaterro.com.br" btn={true} text="Comprar" />
+                        <LinkMenu href="https://www.lojaterro.com.br" btn={true} text="Comprar" n={true} />
                         <LinkMenu href="/onde-comprar" btn={true}  text="Lojas" />
                     </div>
                 </div>
